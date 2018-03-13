@@ -1,0 +1,59 @@
+	Definitions:
+
+Directory		: A folder
+
+Current Directory	: Which folder you are in.
+
+~ 			: Root directory, this is the lowest level (ish) of your system.
+
+.			: System notation for current directory.
+
+..			: System notation for "UP" one directory.
+
+
+	Commands:
+
+pwd: "Print Working Directory" prints the location of where you are to the screen eg:
+
+	$ pwd
+	/c/Users/bmcadams/Documents/
+
+ls		: "List" lists items (folders and files) in current directory.
+
+ls folder	: lists the items in "folder" if "folder" is in your Current Directory
+
+cd folder	: "Change Directory" Changes the directory to "folder" if "folder" is in the directory.
+
+explorer .	: Opens the current directory in the file explorer.
+
+
+
+
+	Notes:
+
+Some commands can be chained together, like changing directories. For example:
+
+	bmcadams@bmcadams MINGW64 /c/Users
+	$ pwd
+	/c/Users
+
+	bmcadams@bmcadams MINGW64 /c/Users
+	$ cd bmcadams/Documents/
+
+	bmcadams@bmcadams MINGW64 ~/Documents
+	$ pwd
+	/c/Users/bmcadams/Documents
+
+
+Changing directories back to where I was (using .. because that is UP one directory):
+
+	bmcadams@bmcadams MINGW64 ~/Documents
+	$ pwd
+	/c/Users/bmcadams/Documents
+
+	bmcadams@bmcadams MINGW64 ~/Documents
+	$ cd ../../
+
+	bmcadams@bmcadams MINGW64 /c/Users
+	$ pwd
+	/c/Users
